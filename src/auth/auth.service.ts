@@ -20,7 +20,7 @@ export class AuthService {
     return bcrypt.compare(password, hash);
   }
 
-  // Método para gerar o token JWT
+  //Método para gerar o token JWT
   //payload → Define os dados que estarão no token (id, username).
   //this.jwtService.sign(payload) → Gera um token com as informações do usuário.
   async generateToken(user: any) {
